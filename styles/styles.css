@@ -1,5 +1,19 @@
 @import "./reset.css";
 
+.container {
+    display: flex;
+}
+
+.banner-container {
+    width: 35%;
+    height: 100vh;
+    background-image: url('../assets/images/banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
 .text-inputs-container {
     display: flex;
     gap: 40px;
