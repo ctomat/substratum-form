@@ -1,0 +1,104 @@
+@import "./reset.css";
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #280E6C;
+}
+.container {
+    display: flex;
+}
+
+.banner-container {
+    width: 50%;
+    height: 100vh;
+    background-image: url('../assets/images/banner2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-right: #282828 1px solid;
+    box-shadow: 30px 0 5px -2px #282828;
+}
+
+.notch-top {
+    background-color: #2A1065;
+    position: relative;
+    z-index: 0;
+}
+
+.notch-top::after {
+    content: "";
+    position:absolute;
+    z-index: 0;
+    right: -21px;
+    top: -38px;
+    width:40px;
+    height:40px;
+    transform:rotate(45deg);
+    background-color:#FFE3EF;  
+    z-index: 1000; 
+}
+
+.notch-bottom {
+    position: relative;
+    z-index: 0;
+}
+
+.notch-bottom::after {
+    content: "";
+    position:absolute;
+    z-index: 1000;
+    left: -31px;
+    bottom: -40px;
+    width:40px;
+    height:40px;
+    transform:rotate(45deg);
+    background-color:#FFE3EF;  
+    z-index: 1000; 
+}
+
+.right-container {
+    background-color: #FFE3EF;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    margin-top: 7px;
+    margin-left: 7px;
+    background-color: #F3ECDA;
+    border: solid 2px #2A1065;
+    bottom: 7px;
+    right: 7px;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+.text-inputs-container {
+    display: flex;
+    gap: 40px;
+    margin: 20px;
+}
+
+.text-input-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+.buttons {
+    margin: 0px 0px 20px 20px;
+}
+
+.buttons button {
+    width: fit-content;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #F34544;
+}
